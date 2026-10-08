@@ -6,7 +6,7 @@ export function HeroSection() {
       <div
         aria-hidden="true"
         className="absolute inset-0 -z-10 bg-cover bg-center"
-        style={{ backgroundImage: "url(/images/hero-bg.png)" }}
+        style={{ backgroundImage: `url(${process.env.NEXT_PUBLIC_BASE_PATH ?? ""}/images/hero-bg.png)` }}
       />
       <div
         aria-hidden="true"
