@@ -1,5 +1,3 @@
-import { SignupForm } from "@/components/signup-form"
-
 export function WaitlistFooter() {
   return (
     <>
@@ -16,7 +14,7 @@ export function WaitlistFooter() {
           </p>
 
           <div className="mx-auto mt-10 max-w-xl">
-            <SignupForm id="footer-email" buttonLabel="< Join the Priority Waitlist >" variant="light" />
+            <div className="ml-embedded" data-form="RB0cnu" />
             <p className="mx-auto mt-4 max-w-lg font-sans text-xs leading-relaxed text-wine-deep/60">
               Be first to know, and first in line for a seat. By joining you agree to receive emails from Bay of Quinte
               Sip &amp; Sign. Unsubscribe anytime.

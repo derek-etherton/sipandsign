@@ -1,5 +1,3 @@
-import { SignupForm } from "@/components/signup-form"
-
 export function HeroSection() {
   return (
     <section className="relative isolate overflow-hidden">
@@ -29,7 +27,7 @@ export function HeroSection() {
         </p>
 
         <div className="mt-10 w-full max-w-xl">
-          <SignupForm id="hero-email" buttonLabel="Join the waitlist" />
+          <div className="ml-embedded" data-form="RB0cnu" />
         </div>
       </div>
     </section>
