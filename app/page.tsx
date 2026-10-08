@@ -1,7 +1,7 @@
 import { HeroSection } from "@/components/hero-section"
 import { AboutSection } from "@/components/about-section"
 import { CommitmentSection } from "@/components/commitment-section"
-import { WaitlistFooter } from "@/components/waitlist-footer"
+import { SiteFooter } from "@/components/site-footer"
 
 export default function Page() {
   return (
@@ -9,7 +9,7 @@ export default function Page() {
       <HeroSection />
       <AboutSection />
       <CommitmentSection />
-      <WaitlistFooter />
+      <SiteFooter />
     </main>
   )
 }
