@@ -28,8 +28,6 @@ jobs:
       - name: Build static site
         env:
           NEXT_TELEMETRY_DISABLED: "1"
-          # Project pages are served from /<repo-name>. Remove this line if you use a custom domain.
-          NEXT_PUBLIC_BASE_PATH: /${{ github.event.repository.name }}
         run: pnpm build
       - uses: actions/upload-pages-artifact@v3
         with:
