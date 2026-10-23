@@ -1,15 +1,21 @@
 import { Handshake, MapPin } from "lucide-react"
 
-function IlyHandIcon({ className }: { className?: string }) {
+function IlyHandIcon({ className, strokeWidth = 1.5 }: { className?: string; strokeWidth?: number }) {
   return (
-    <svg viewBox="0 0 64 64" fill="none" aria-hidden="true" className={className}>
-      <path
-        d="M20 60v-9c0-5-1-9-4-14L6 23c-2-4-1-7 2-9s6 0 8 3l9 13c2 3 6 4 9 1l8-25c1-4 4-6 7-5s4 4 3 8l-6 25m-4-3c2-4 6-5 9-3 3 2 3 6 1 9l-5 7c-3 4-8 5-12 2-3-2-4-6-2-10l3-5m9-1 8-16c2-4 5-5 8-3s3 5 1 9L53 43c-2 5-4 9-4 14v3"
-        stroke="currentColor"
-        strokeWidth="2.6"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
+    <svg
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth={strokeWidth / 1.15}
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden="true"
+      className={className}
+    >
+      <g transform="translate(12 12) scale(1.15) translate(-10.6 -12.7)">
+        <path d="M8.5 22C7.8 20.5 7 19 6.2 17.8L2.6 13.2A1.6 1.6 0 0 1 5.2 11.2L7.7 13.6 7.4 4.8A1.4 1.4 0 0 1 10.2 4.9L10.5 12A1.3 1.3 0 0 1 13.1 12 1.3 1.3 0 0 1 15.7 12L16 8.6A1.2 1.2 0 0 1 18.4 8.8L18.2 16C18 18.5 17.2 20.5 16.5 22" />
+        <path d="M10.5 12v2.8a1.3 1.3 0 0 0 2.6 0V12M13.1 12v2.8a1.3 1.3 0 0 0 2.6 0V12" />
+      </g>
     </svg>
   )
 }
@@ -20,19 +26,19 @@ const values = [
     eyebrow: "Deaf-Led Excellence",
     title: "100% Deaf-Led Instruction",
     description:
-      "Every session is taught directly by qualified, native Deaf instructors who are fairly compensated at professional rates for their expertise.",
+      "Every session is taught by a Deaf ASL instructor with lived experience, knowledge, and passion for teaching.",
   },
   {
     icon: Handshake,
-    eyebrow: "Cultural Allyship",
+    eyebrow: "Community First",
     title: "Building Real Allies",
     description:
       "Our socials spark cultural appreciation and curiosity, fostering genuine allyship and broader ASL learning.",
   },
   {
     icon: MapPin,
-    eyebrow: "Local Champions",
-    title: "Supporting Local",
+    eyebrow: "Supporting Local",
+    title: "Local businesses",
     description:
       "We partner exclusively with local businesses and venues right here in the Bay of Quinte, creating inclusive, vibrant communal spaces.",
   },

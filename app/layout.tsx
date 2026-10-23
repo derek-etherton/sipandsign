@@ -1,8 +1,15 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Playfair_Display, Inter, Great_Vibes } from 'next/font/google'
 import './globals.css'
+
+const script = Great_Vibes({
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-script',
+  display: 'swap',
+})
 
 const playfair = Playfair_Display({
   subsets: ['latin'],
@@ -53,7 +60,7 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
+    <html lang="en" className={`${playfair.variable} ${inter.variable} ${script.variable}`}>
       <body className="antialiased">
         {children}
         <Script id="mailerlite-universal" strategy="afterInteractive">
