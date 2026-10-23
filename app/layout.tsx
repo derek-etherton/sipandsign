@@ -26,9 +26,9 @@ const inter = Inter({
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? ''
 
 export const metadata: Metadata = {
-  title: 'Bay of Quinte Sip & Sign Series | Exclusive ASL Pop-Ups',
+  title: 'SignBridge Events | Sip & Sign',
   description:
-    'Intimate, Deaf-led pop-ups blending cozy social hours, regional pairings, and interactive sign language across Belleville and the Bay of Quinte. Join the priority list.',
+    'If you\'ve ever thought, "I\'d love to learn ASL," your opportunity is here',
   generator: 'v0.app',
   icons: {
     icon: [
